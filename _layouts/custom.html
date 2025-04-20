@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Set character encoding and viewport for responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- The page title comes from the page's YAML front matter -->
+    <title>{{ page.title }}</title>
+    <!-- Link to your custom CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/custom.css' | relative_url }}">
+    <!-- Optionally link the main stylesheet -->
+    <link rel="stylesheet" href="{{ '/assets/main.css' | relative_url }}">
+  </head>
+  <body>
+    <!-- Top Navigation Bar -->
+    <header>
+      <nav class="top-nav">
+        <ul>
+          <li><a href="#" data-target="home">Home</a></li>
+          <li><a href="#" data-target="PsychConcepts">Psychology Concepts</a></li>
+          <li><a href="#" data-target="NeuroScience">Neuroscience Concepts</a></li>
+          <li><a href="#" data-target="OtherDiscussion1">Other Discussion1</a></li>
+          <li><a href="#" data-target="OtherDiscussion2">Other Discussion2</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Main Content Wrapper -->
+    <div class="main-content">
+      
+      <!-- Left Rail Navigation Areas -->
+      <!-- Left Rail for Home (if needed – can be toggled via CSS or JavaScript) -->
+      <aside class="left-rail" id="home-rail"></aside>
+      
+      <!-- Left Rail for Psychology Concepts -->
+      <aside class="left-rail" id="PsychConcepts-rail">
+        <ul>
+          <li><a href="#" data-target="Optimism Bias">Optimism Bias</a></li>
+          <li><a href="#" data-target="Non-Committal Verbiage">Non-Committal Verbiage</a></li>
+          <li><a href="#" data-target="Choice Overload">Choice Overload</a></li>
+          <li><a href="#" data-target="Chunking">Chunking</a></li>
+          <li><a href="#" data-target="Exposure Effect">Exposure Effect</a></li>
+          <li><a href="#" data-target="Ikea Effect">Ikea Effect</a></li>
+          <li><a href="#" data-target="Social Proof">Social Proof</a></li>
+          <li><a href="#" data-target="Authority Principle">Authority</a></li>
+          <li><a href="#" data-target="Reciprocity">Reciprocity</a></li>
+          <li><a href="#" data-target="Inertia">Inertia</a></li>            
+        </ul>
+      </aside>
+      
+      <!-- Left Rail for Neuroscience Concepts -->
+      <aside class="left-rail" id="NeuroScience-rail">
+        <ul>
+          <li><a href="#" data-target="Inattentional Blindness">Inattentional Blindness</a></li>
+          <li><a href="#" data-target="Stroop Effect">Stroop Effect</a></li>
+          <li><a href="#" data-target="Top-Down Processing">Top-Down Processing</a></li>
+          <li><a href="#" data-target="Memory Reconsolidation">Memory Reconsolidation</a></li>
+        </ul>
+      </aside>
+      
+      <!-- Left Rail for Other Discussion1 -->
+      <aside class="left-rail" id="OtherDiscussion1-rail">
+        <ul>
+          <li><a href="#" data-target="OtherDiscussion1-Placeholder1">Placeholder 1</a></li>
+          <li><a href="#" data-target="OtherDiscussion1-Placeholder2">Placeholder 2</a></li>
+          <li><a href="#" data-target="OtherDiscussion1-Placeholder3">Placeholder 3</a></li>
+        </ul>
+      </aside>
+      
+      <!-- Left Rail for Other Discussion2 -->
+      <aside class="left-rail" id="OtherDiscussion2-rail">
+        <ul>
+          <li><a href="#" data-target="OtherDiscussion2-Placeholder1">Placeholder 1</a></li>
+          <li><a href="#" data-target="OtherDiscussion2-Placeholder2">Placeholder 2</a></li>
+          <li><a href="#" data-target="OtherDiscussion2-Placeholder3">Placeholder 3</a></li>
+        </ul>
+      </aside>
+      
+      <!-- Page-Specific Content -->
+      <section class="page-content">
+        {{ content }}
+      </section>
+    </div>
+
+    <!-- Optional Footer -->
+    <footer>
+      <p>&copy; {{ "now" | date: "%Y" }} Your Site Name. All rights reserved.</p>
+    </footer>
+<div id="disqus_thread"></div>
+<script>
+  var disqus_config = function () {
+    this.page.url = window.location.href;  
+    this.page.identifier = window.location.pathname;
+  };
+
+  (function() {
+    var d = document, s = d.createElement('script');
+    s.src = 'https://persuasive-design.disqus.com/embed.js';
+    s.setAttribute('data-timestamp', +new Date());
+    (d.head || d.body).appendChild(s);
+  })();
+</script>
+<noscript>Please enable JavaScript to view the comments powered by Disqus.</noscript>
+</body>
+</html>
