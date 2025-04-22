@@ -2,11 +2,12 @@
 layout: custom
 title: "Persuasive Design"
 description: "Exploring persuasive design techniques."
-permalink: /persuasivedesign/
+permalink: /
 hide_sidebar: true
 comments: true
 author_profile: false
 ---
+
  <!-- Content Section -->
         <div class="content">
             <!-- Home Content -->
