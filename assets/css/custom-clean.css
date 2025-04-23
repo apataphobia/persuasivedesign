@@ -93,3 +93,8 @@ body {
 .feedback-form button:hover {
   background-color: #575757;
 }
+div.reactions, 
+.reaction-label, 
+.reactions__container {
+  display: none !important;
+}
