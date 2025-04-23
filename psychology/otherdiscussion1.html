@@ -1,37 +1,36 @@
 <!DOCTYPE html>
+
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>OtherDiscussion1</title>
-  <link rel="stylesheet" href="https://apataphobia.github.io/persuasivedesign/assets/css/custom-clean.css" />
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>OtherDiscussion1</title>
+<link href="https://apataphobia.github.io/persuasivedesign/assets/css/custom-clean.css" rel="stylesheet"/>
 </head>
 <body>
-  <div class="topnav">
-    <a href="/persuasivedesign/index.html">Home</a>
-    <a href="/persuasivedesign/psychology/psychconcepts.html">Psychology Concepts</a>
-    <a href="/persuasivedesign/neuroscience/neuroscience.html">Neuroscience Concepts</a>
-    <a href="/persuasivedesign/psychology/otherdiscussion1.html">Other Discussion1</a>
-    <a href="/persuasivedesign/psychology/otherdiscussion2.html">Other Discussion2</a>
-  </div>
-  <div class="container">
-    
-<div class="sidebar">
-  <ul>
-    <li><a href="../psychology/otherdiscussion1.html">Other Discussion 1</a></li>
-    <li><a href="../psychology/otherdiscussion2.html">Other Discussion 2</a></li>
-  </ul>
+<div class="topnav">
+<a href="/persuasivedesign/index.html">Home</a>
+<a href="/persuasivedesign/psychology/psychconcepts.html">Psychology Concepts</a>
+<a href="/persuasivedesign/neuroscience/neuroscience.html">Neuroscience Concepts</a>
+<a href="/persuasivedesign/psychology/otherdiscussion1.html">Other Discussion1</a>
+<a href="/persuasivedesign/psychology/otherdiscussion2.html">Other Discussion2</a>
 </div>
-
-    <div class="content">
-      <h1>OtherDiscussion1</h1>
-      <section class="section" id="OtherDiscussion1">
+<div class="container">
+<div class="sidebar">
+<ul>
+<li><a href="../psychology/otherdiscussion1.html">Other Discussion 1</a></li>
+<li><a href="../psychology/otherdiscussion2.html">Other Discussion 2</a></li>
+</ul>
+</div>
+<div class="content">
+<h1>OtherDiscussion1</h1>
+<section class="section" id="OtherDiscussion1">
 <h2> OtherDiscussion1 </h2>
 <p>Purus sit amet volutpat consequat mauris nunc congue nisi. Ullamcorper sit amet risus nullam eget felis eget nunc. Consectetur adipiscing elit ut aliquam purus. Quis viverra nibh cras pulvinar mattis nunc. Scelerisque eleifend donec pretium vulputate sapien nec. Tincidunt tortor aliquam nulla facilisi cras fermentum odio. Urna duis convallis convallis tellus id interdum velit.</p>
 </section>
-      <section>
-        <div id="disqus_thread"></div>
-        <script>
+<section>
+<div id="disqus_thread"></div>
+<script>
         var disqus_config = function () {
           this.page.url = window.location.href;
           this.page.identifier = "otherdiscussion1";
@@ -43,8 +42,24 @@
           (d.head || d.body).appendChild(s);
         })();
         </script>
-      </section>
-    </div>
-  </div>
+<script>
+  setTimeout(function() {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      .reactions, 
+      .reaction-label, 
+      .reactions__container,
+      .reaction, 
+      .reaction__list {
+        display: none !important;
+      }
+    `;
+    document.head.appendChild(style);
+  }, 2000);
+</script>
+
+</section>
+</div>
+</div>
 </body>
 </html>
