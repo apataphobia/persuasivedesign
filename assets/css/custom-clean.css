@@ -46,9 +46,13 @@ body {
   margin-bottom: 10px;
 }
 .sidebar a {
-  text-decoration: none;
-  color: #333;
+  display: block;
+  max-width: 180px;         /* Adjust as needed */
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
 }
+
 .sidebar a:hover {
   background-color: #ddd;
   padding: 5px;
