@@ -28,10 +28,13 @@ body {
 
 /* Sidebar */
 .sidebar {
-  width: 200px;
+  width: 220px;           /* 🔒 Fixed width to prevent shifting */
   background-color: #f4f4f4;
   padding: 20px;
+  flex-shrink: 0;         /* ⛔ Don't let it shrink in flex layout */
+  box-sizing: border-box; /* ✅ Ensures padding doesn't alter width */
 }
+
 .sidebar ul {
   list-style-type: none;
   padding: 0;
@@ -51,6 +54,7 @@ body {
 /* Main Content Container */
 .container {
   display: flex;
+  align-items: flex-start;
 }
 .content {
   flex-grow: 1;
