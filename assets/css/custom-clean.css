@@ -33,6 +33,9 @@ body {
   padding: 20px;
   flex-shrink: 0;         /* ⛔ Don't let it shrink in flex layout */
   box-sizing: border-box; /* ✅ Ensures padding doesn't alter width */
+  overflow: hidden;       /* Prevents sidebar from stretching */
+  white-space: nowrap;    /* Keeps links on one line */
+  text-overflow: ellipsis;/* Adds ... if sidebar link is too long */
 }
 
 .sidebar ul {
