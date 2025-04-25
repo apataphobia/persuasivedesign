@@ -1,6 +1,9 @@
 
 /* Reset and Base Styles */
 body {
+  font-family: 'Source Sans Pro', sans-serif;
+  background-color: #f9f9f9;
+  color: #333333;
   font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
@@ -10,10 +13,13 @@ body {
 
 /* Top Navigation */
 .topnav {
+  background-color: #2e3a59;
   background-color: #333;
   overflow: hidden;
 }
 .topnav a {
+  font-family: 'Poppins', sans-serif;
+  color: #f9f9f9;
   float: left;
   display: block;
   color: #f2f2f2;
@@ -22,12 +28,15 @@ body {
   text-decoration: none;
 }
 .topnav a:hover {
+  background-color: #3366cc;
+  color: #ffffff;
   background-color: #ddd;
   color: black;
 }
 
 /* Sidebar */
 .sidebar {
+  background-color: #f0f0f3;
   width: 220px;           /* 🔒 Fixed width to prevent shifting */
   background-color: #f4f4f4;
   padding: 20px;
@@ -46,6 +55,8 @@ body {
   margin-bottom: 10px;
 }
 .sidebar a {
+  color: #2e3a59;
+  font-family: 'Source Sans Pro', sans-serif;
   display: block;
   max-width: 180px;         /* Adjust as needed */
   overflow: hidden;
@@ -54,6 +65,7 @@ body {
 }
 
 .sidebar a:hover {
+  background-color: #e0e0ea;
   background-color: #ddd;
   padding: 5px;
 }
