@@ -13,7 +13,7 @@ body {
 
 /* Top Navigation */
 .topnav {
-  background-color: #00338D;
+  background-color: #001B44; /* 🔥 Deeper navy */
   overflow: hidden;
 }
 .topnav a {
@@ -28,6 +28,7 @@ body {
   background-color: #001F5B;
   color: white;
 }
+
 
 /* Sidebar */
 .sidebar {
@@ -93,13 +94,19 @@ h1, h2, h3 {
 }
 .feedback-form button {
   align-self: flex-start;
-  padding: 8px 16px;
+  padding: 10px 20px;
   background-color: #00338D;
   color: white;
   border: none;
-  border-radius: 5px;
+  border-radius: 8px; /* ✨ Softer rounded corners */
   cursor: pointer;
+  font-size: 1em;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* ✨ Light shadow */
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 .feedback-form button:hover {
   background-color: #001F5B;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ✨ Slightly stronger hover shadow */
 }
+
