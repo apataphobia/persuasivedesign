@@ -1,11 +1,10 @@
 
-/* Updated custom-clean.css for Libre Baskerville body and casual professional color palette */
 
 /* Reset and Base Styles */
 body {
   font-family: 'Libre Baskerville', serif;
-  background-color: #FAFAFA;
-  color: #333333;
+  background-color: #FFFFFF;
+  color: #212529;
   margin: 0;
   padding: 0;
   display: flex;
@@ -14,7 +13,7 @@ body {
 
 /* Top Navigation */
 .topnav {
-  background-color: #2C3E50;
+  background-color: #00338D;
   overflow: hidden;
 }
 .topnav a {
@@ -26,14 +25,14 @@ body {
   text-decoration: none;
 }
 .topnav a:hover {
-  background-color: #3D566E;
+  background-color: #001F5B;
   color: white;
 }
 
 /* Sidebar */
 .sidebar {
   width: 220px;
-  background-color: #F1F3F5;
+  background-color: #F5F7FA;
   padding: 20px;
   flex-shrink: 0;
   box-sizing: border-box;
@@ -47,10 +46,10 @@ body {
 }
 .sidebar a {
   text-decoration: none;
-  color: #333;
+  color: #212529;
 }
 .sidebar a:hover {
-  background-color: #DDE3E8;
+  background-color: #A7C6ED;
 }
 
 /* Main Content Container */
@@ -65,7 +64,7 @@ body {
 
 h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
-  color: #222222;
+  color: #212529;
 }
 
 /* Disqus Section */
@@ -95,12 +94,12 @@ h1, h2, h3 {
 .feedback-form button {
   align-self: flex-start;
   padding: 8px 16px;
-  background-color: #4C8BF5;
+  background-color: #00338D;
   color: white;
   border: none;
   border-radius: 5px;
   cursor: pointer;
 }
 .feedback-form button:hover {
-  background-color: #3D566E;
+  background-color: #001F5B;
 }
