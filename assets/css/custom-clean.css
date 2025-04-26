@@ -1,52 +1,41 @@
 
+/* Updated custom-clean.css for Libre Baskerville body and headings */
+
 /* Reset and Base Styles */
 body {
-  font-family: 'Source Sans Pro', Arial, sans-serif;
+  font-family: 'Libre Baskerville', serif;
   margin: 0;
   padding: 0;
   display: flex;
   flex-direction: column;
 }
 
-
 /* Top Navigation */
 .topnav {
-  background-color: #2e3a59;
   background-color: #333;
   overflow: hidden;
 }
 .topnav a {
-  font-family: 'Poppins', sans-serif;
-  color: #f9f9f9;
   float: left;
   display: block;
   color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  /* Keep existing font for nav */
 }
 .topnav a:hover {
-  background-color: #3366cc;
-  color: #ffffff;
   background-color: #ddd;
   color: black;
 }
 
 /* Sidebar */
 .sidebar {
-  background-color: #f0f0f3;
-  width: 220px;           /* 🔒 Fixed width to prevent shifting */
+  width: 220px;
   background-color: #f4f4f4;
   padding: 20px;
-  flex-shrink: 0;         /* ⛔ Don't let it shrink in flex layout */
-  box-sizing: border-box; /* ✅ Ensures padding doesn't alter width */
-  overflow: hidden;       /* Prevents sidebar from stretching */
-  white-space: nowrap;    /* Keeps links on one line */
-  text-overflow: ellipsis;/* Adds ... if sidebar link is too long */
-}
-
-h1, h2, h3 {
-  font-family: 'Poppins', sans-serif;
+  flex-shrink: 0;
+  box-sizing: border-box;
 }
 .sidebar ul {
   list-style-type: none;
@@ -56,17 +45,11 @@ h1, h2, h3 {
   margin-bottom: 10px;
 }
 .sidebar a {
-  color: #2e3a59;
-  font-family: 'Source Sans Pro', sans-serif;
-  display: block;
-  max-width: 180px;         /* Adjust as needed */
-  overflow: hidden;
-  white-space: nowrap;
-  text-overflow: ellipsis;
+  text-decoration: none;
+  color: #333;
+  /* Keep existing font for sidebar */
 }
-
 .sidebar a:hover {
-  background-color: #e0e0ea;
   background-color: #ddd;
   padding: 5px;
 }
@@ -74,11 +57,14 @@ h1, h2, h3 {
 /* Main Content Container */
 .container {
   display: flex;
-  align-items: flex-start;
 }
 .content {
   flex-grow: 1;
   padding: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Libre Baskerville', serif;
 }
 
 /* Disqus Section */
@@ -117,8 +103,8 @@ h1, h2, h3 {
 .feedback-form button:hover {
   background-color: #575757;
 }
-div.reactions, 
-.reaction-label, 
-.reactions__container {
-  display: none !important;
+
+/* Force Libre Baskerville for all content text */
+.content, .content * {
+  font-family: 'Libre Baskerville', serif;
 }
