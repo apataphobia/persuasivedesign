@@ -46,7 +46,7 @@ body {
 /* Sidebar */
 .sidebar {
   width: 220px;
-  background-color: #f0f8ff;
+  background-color: #e6eef8;
   padding: 20px;
   flex-shrink: 0;
   box-sizing: border-box;
@@ -68,10 +68,10 @@ body {
 }
 
 .sidebar a:hover {
-  background-color: #e6eef8;
+  background-color: #dce7f5; /* Slightly deeper hover color */
   color: #001D55;
-  font-size: 1.05em; /* 🔥 Slight font grow */
-  font-weight: 600;   /* 💪 Bold on hover */
+  font-size: 1.05em;
+  font-weight: 600;
 }
 
 .sidebar a.active {
@@ -89,7 +89,7 @@ body {
 }
 .content {
   flex-grow: 1;
-   padding: 30px 30px;
+   padding: 20px 30px;
   background-color: #ffffff;
   font-family: 'Libre Baskerville', serif;
 }
