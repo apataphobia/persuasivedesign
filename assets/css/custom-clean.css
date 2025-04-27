@@ -30,13 +30,17 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: normal;
+  transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+}
 
-}
 .topnav a:hover {
-  background-color: #e6eef8;
-  color: #002855;
+  background-color: #001d44; /* slightly darker blue on hover */
+  color: #ffffff;
+  font-size: 1.05em; /* 🔥 Slight grow on hover */
+  font-weight: 600;  /* 💪 Bold on hover */
 }
+
 
 
 /* Sidebar */

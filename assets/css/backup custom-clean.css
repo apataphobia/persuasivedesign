@@ -1,3 +1,5 @@
+
+
 /* Reset and Base Styles */
 *,
 *::before,
@@ -18,28 +20,29 @@ body {
 
 /* Top Navigation */
 .topnav {
-  background-color: #001d55; /* Deeper navy */
+  background-color: #001d55; /* 🔥 Deeper navy */
   overflow: hidden;
 }
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2; /* Light text */
+  color: #f2f2f2;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-weight: 600;
   transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 .topnav a:hover {
-  background-color: #e6eef8; /* Soft blue on hover */
-  color: #002855; /* Dark blue text on hover */
+  background-color: #e6eef8;
+  color: #002855;
 }
+
 
 /* Sidebar */
 .sidebar {
   width: 220px;
-  background-color: #f4f4f4;
+  background-color: #f0f8ff;
   padding: 20px;
   flex-shrink: 0;
   box-sizing: border-box;
@@ -54,20 +57,27 @@ body {
 .sidebar a {
   text-decoration: none;
   color: #333;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  font-weight: normal;
+  transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
   padding: 5px;
   border-radius: 4px;
 }
+
 .sidebar a:hover {
   background-color: #e6eef8;
-  color: #001d55;
+  color: #001D55;
+  font-size: 1.05em; /* 🔥 Slight font grow */
+  font-weight: 600;   /* 💪 Bold on hover */
 }
+
 .sidebar a.active {
-  background-color: #d2e3f5;
-  color: #001d55;
-  font-weight: bold;
-  border-radius: 4px;
+  background-color: #d2e3f5; /* 🌟 Slightly deeper blue when active */
+  color: #001D55;            /* dark navy text */
+  font-weight: bold;         /* emphasize active page */
+  border-radius: 4px;        /* consistent with hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* ✨ Smooth fade */
 }
+
 
 /* Main Content Container */
 .container {
@@ -75,12 +85,11 @@ body {
 }
 .content {
   flex-grow: 1;
-  padding: 40px 30px;
+   padding: 30px 30px;
   background-color: #ffffff;
   font-family: 'Libre Baskerville', serif;
 }
 
-/* Headings */
 h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
   color: #001d55; /* Match dark navy tone */
@@ -88,37 +97,14 @@ h1, h2, h3 {
   margin-bottom: 1rem;
 }
 
-/* Paragraphs */
-p {
-  margin-bottom: 1.2em;
-}
-
-/* Lists */
-ul {
-  margin-bottom: 1.5em;
-}
-li {
-  margin-bottom: 0.5em;
-}
-
 /* Disqus Section */
 #disqus_thread {
-  font-family: 'Libre Baskerville', serif;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
   margin-top: 40px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-}
-
-/* Section Margins */
-.section {
-  margin-bottom: 40px;
 }
 
 /* Feedback Form Styles */
 .feedback-form {
-  margin-top: 40px;
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
 }
@@ -141,18 +127,18 @@ li {
   background-color: #00338D;
   color: white;
   border: none;
-  border-radius: 8px;
+  border-radius: 8px; /* ✨ Softer rounded corners */
   cursor: pointer;
   font-size: 1em;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* ✨ Light shadow */
   transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
+
 .feedback-form button:hover {
   background-color: #001F5B;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ✨ Slightly stronger hover shadow */
 }
 
-/* Mobile Layout */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
@@ -160,6 +146,7 @@ li {
 
   .sidebar {
     width: 100%;
+    background-color: #f4f4f4;
     padding: 10px;
     text-align: center;
     border-bottom: 1px solid #ccc;
@@ -173,15 +160,28 @@ li {
   }
 
   .sidebar li {
-    margin: 5px;
+  margin: 5px;
     margin-bottom: 0;
   }
 
-  .sidebar a {
-    font-size: 0.9em;
-  }
+.sidebar a {
+  font-size: 0.9em; /* slightly smaller text on mobile */
+}
 
   .content {
     padding: 20px;
   }
 }
+
+#disqus_thread {
+  font-family: 'Libre Baskerville', serif;
+  background-color: #f9f9f9;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 40px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
+}
+.section {
+  margin-bottom: 40px;
+}
+
