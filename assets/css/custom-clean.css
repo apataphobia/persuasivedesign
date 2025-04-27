@@ -23,9 +23,11 @@ body {
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
+  transition: background-color 0.3s ease, color 0.3s ease;
+
 }
 .topnav a:hover {
-  background-color: #001F5B;
+  background-color: #002244;
   color: white;
 }
 
