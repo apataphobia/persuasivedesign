@@ -124,3 +124,31 @@ h1, h2, h3 {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ✨ Slightly stronger hover shadow */
 }
 
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .sidebar {
+    width: 100%;
+    background-color: #f4f4f4;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #ccc;
+  }
+
+  .sidebar ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .sidebar li {
+    margin-bottom: 0;
+  }
+
+  .content {
+    padding: 20px;
+  }
+}
