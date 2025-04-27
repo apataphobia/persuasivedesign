@@ -35,7 +35,7 @@ body {
 /* Sidebar */
 .sidebar {
   width: 220px;
-  background-color: #F5F7FA;
+  background-color: #f4f4f4;
   padding: 20px;
   flex-shrink: 0;
   box-sizing: border-box;
@@ -49,11 +49,22 @@ body {
 }
 .sidebar a {
   text-decoration: none;
-  color: #212529;
+  color: #333;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  padding: 5px;
+  border-radius: 4px; /* consistent rounding for hover + active */
 }
 .sidebar a:hover {
-  background-color: #A7C6ED;
+  background-color: #e6eef8; /* 🌟 Light blue on hover */
+  color: #001D55; /* optional: navy text on hover */
 }
+.sidebar a.active {
+  background-color: #d2e3f5; /* 🌟 Slightly deeper blue when active */
+  color: #001D55; /* dark navy text */
+  font-weight: bold; /* emphasize active page */
+}
+
+
 
 /* Main Content Container */
 .container {
