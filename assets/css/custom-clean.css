@@ -80,14 +80,16 @@ body {
 }
 .content {
   flex-grow: 1;
-   padding: 40px 30px;
+   padding: 30px 30px;
   background-color: #ffffff;
   font-family: 'Libre Baskerville', serif;
 }
 
 h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
-  color: #212529;
+  color: #001d55; /* Match dark navy tone */
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 /* Disqus Section */
