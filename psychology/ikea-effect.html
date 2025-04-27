@@ -96,5 +96,16 @@ In digital flows, there are many potential avenues to explore here. I'll give yo
 </section>
 </div>
 </div>
+<script>
+  // Automatically add 'active' class to sidebar link matching current URL
+  document.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('.sidebar a');
+    links.forEach(function(link) {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
 </body>
 </html>

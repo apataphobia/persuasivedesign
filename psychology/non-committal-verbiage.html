@@ -35,7 +35,6 @@
 <div class="content">
 <h1>Non-Committal Verbiage</h1>
 <section class="section" id="Non-Committal Verbiage">
-<h2>Non-Committal Verbiage</h2>
 <div class="subsection">
 <h3>Definition</h3>
 <p>Non-committal verbiage refers to language that avoids the feel of obligation. It involves using words or phrases that don't fully commit to following a specific path. Examples of non-committal verbiage include phrases like “Get Started” rather than “Apply Now.” Committal verbiage conveys the feel or impression--real or imagined--that the user may be somehow locked in to a given path. Non-committal verbiage avoids any subtle or implied message of obligation. </p>
@@ -101,5 +100,16 @@ Digital Applications:
 </section>
 </div>
 </div>
+<script>
+  // Automatically add 'active' class to sidebar link matching current URL
+  document.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('.sidebar a');
+    links.forEach(function(link) {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
 </body>
 </html>
