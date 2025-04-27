@@ -1,6 +1,12 @@
 
 
 /* Reset and Base Styles */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
 body {
   font-family: 'Libre Baskerville', serif;
   background-color: #FFFFFF;
@@ -28,7 +34,7 @@ body {
 }
 .topnav a:hover {
   background-color: #002244;
-  color: white;
+  color: #001D55;
 }
 
 
@@ -145,8 +151,13 @@ h1, h2, h3 {
   }
 
   .sidebar li {
+  margin: 5px;
     margin-bottom: 0;
   }
+
+.sidebar a {
+  font-size: 0.9em; /* slightly smaller text on mobile */
+}
 
   .content {
     padding: 20px;
