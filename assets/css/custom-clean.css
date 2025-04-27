@@ -42,7 +42,7 @@ body {
 /* Sidebar */
 .sidebar {
   width: 220px;
-  background-color: #f4f4f4;
+  background-color: #f0f0f3;
   padding: 20px;
   flex-shrink: 0;
   box-sizing: border-box;
