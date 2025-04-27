@@ -60,10 +60,11 @@ body {
 }
 .sidebar a.active {
   background-color: #d2e3f5; /* 🌟 Slightly deeper blue when active */
-  color: #001D55; /* dark navy text */
-  font-weight: bold; /* emphasize active page */
+  color: #001D55;            /* dark navy text */
+  font-weight: bold;         /* emphasize active page */
+  border-radius: 4px;        /* consistent with hover */
+  transition: background-color 0.3s ease, color 0.3s ease; /* ✨ Smooth fade */
 }
-
 
 
 /* Main Content Container */
