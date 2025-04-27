@@ -80,7 +80,8 @@ body {
 }
 .content {
   flex-grow: 1;
-  padding: 20px;
+   padding: 40px 30px;
+  background-color: #ffffff;
   font-family: 'Libre Baskerville', serif;
 }
 
