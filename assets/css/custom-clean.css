@@ -1,17 +1,8 @@
-
+/* Final polished custom-clean.css */
 
 /* Reset and Base Styles */
-*,
-*::before,
-*::after {
-  box-sizing: border-box;
-}
-
 body {
   font-family: 'Libre Baskerville', serif;
-  line-height: 1.6;
-  background-color: #FFFFFF;
-  color: #212529;
   margin: 0;
   padding: 0;
   display: flex;
@@ -20,33 +11,28 @@ body {
 
 /* Top Navigation */
 .topnav {
-  background-color: #001d55; /* 🔥 Deeper navy */
+  background-color: #002b5b; /* darker blue */
   overflow: hidden;
 }
 .topnav a {
   float: left;
   display: block;
-  color: #f2f2f2;
+  color: #ffffff;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-weight: normal;
-  transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* keep nav font */
+  transition: background-color 0.3s ease, transform 0.2s ease;
 }
-
 .topnav a:hover {
-  background-color: #001d44; /* slightly darker blue on hover */
-  color: #ffffff;
-  font-size: 1.05em; /* 🔥 Slight grow on hover */
-  font-weight: 600;  /* 💪 Bold on hover */
+  background-color: #004080;
+  transform: scale(1.05); /* slight zoom on hover */
 }
-
-
 
 /* Sidebar */
 .sidebar {
   width: 220px;
-  background-color: #e6eef8;
+  background-color: #f0f4f8; /* light blue restored */
   padding: 20px;
   flex-shrink: 0;
   box-sizing: border-box;
@@ -61,27 +47,15 @@ body {
 .sidebar a {
   text-decoration: none;
   color: #333;
-  font-weight: normal;
-  transition: background-color 0.3s ease, color 0.3s ease, font-size 0.3s ease, font-weight 0.3s ease;
+  font-family: 'Poppins', sans-serif; /* sidebar font */
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+.sidebar a:hover {
+  background-color: #e6eef8;
   padding: 5px;
   border-radius: 4px;
+  transform: scale(1.05);
 }
-
-.sidebar a:hover {
-  background-color: #dce7f5; /* Slightly deeper hover color */
-  color: #001D55;
-  font-size: 1.05em;
-  font-weight: 600;
-}
-
-.sidebar a.active {
-  background-color: #d2e3f5; /* 🌟 Slightly deeper blue when active */
-  color: #001D55;            /* dark navy text */
-  font-weight: bold;         /* emphasize active page */
-  border-radius: 4px;        /* consistent with hover */
-  transition: background-color 0.3s ease, color 0.3s ease; /* ✨ Smooth fade */
-}
-
 
 /* Main Content Container */
 .container {
@@ -89,16 +63,11 @@ body {
 }
 .content {
   flex-grow: 1;
-   padding: 20px 30px;
-  background-color: #ffffff;
-  font-family: 'Libre Baskerville', serif;
+  padding: 20px;
 }
 
 h1, h2, h3 {
   font-family: 'Libre Baskerville', serif;
-  color: #001d55; /* Match dark navy tone */
-  margin-top: 1.5rem;
-  margin-bottom: 1rem;
 }
 
 /* Disqus Section */
@@ -127,65 +96,13 @@ h1, h2, h3 {
 }
 .feedback-form button {
   align-self: flex-start;
-  padding: 10px 20px;
-  background-color: #00338D;
+  padding: 8px 16px;
+  background-color: #333;
   color: white;
   border: none;
-  border-radius: 8px; /* ✨ Softer rounded corners */
+  border-radius: 5px;
   cursor: pointer;
-  font-size: 1em;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* ✨ Light shadow */
-  transition: background-color 0.3s ease, box-shadow 0.3s ease;
 }
-
 .feedback-form button:hover {
-  background-color: #001F5B;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* ✨ Slightly stronger hover shadow */
+  background-color: #575757;
 }
-
-@media (max-width: 768px) {
-  .container {
-    flex-direction: column;
-  }
-
-  .sidebar {
-    width: 100%;
-    background-color: #f4f4f4;
-    padding: 10px;
-    text-align: center;
-    border-bottom: 1px solid #ccc;
-  }
-
-  .sidebar ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 10px;
-  }
-
-  .sidebar li {
-  margin: 5px;
-    margin-bottom: 0;
-  }
-
-.sidebar a {
-  font-size: 0.9em; /* slightly smaller text on mobile */
-}
-
-  .content {
-    padding: 20px;
-  }
-}
-
-#disqus_thread {
-  font-family: 'Libre Baskerville', serif;
-  background-color: #f9f9f9;
-  padding: 20px;
-  border-radius: 8px;
-  margin-top: 40px;
-  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1);
-}
-.section {
-  margin-bottom: 40px;
-}
-

@@ -1,90 +1,70 @@
 <!DOCTYPE html>
-
 <html lang="en">
 <head>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Top Down Processing</title>
-<link href="https://apataphobia.github.io/persuasivedesign/assets/css/custom-clean.css" rel="stylesheet"/>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top-Down Processing</title>
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Poppins:wght@500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://apataphobia.github.io/persuasivedesign/assets/css/custom-clean.css">
 </head>
-<body>
-<div class="topnav">
-<a href="/persuasivedesign/index.html">Home</a>
-<a href="/persuasivedesign/psychology/psychconcepts.html">Psychology Concepts</a>
-<a href="/persuasivedesign/neuroscience/neuroscience.html">Neuroscience Concepts</a>
-<a href="/persuasivedesign/psychology/otherdiscussion1.html">Other Discussion1</a>
-<a href="/persuasivedesign/psychology/otherdiscussion2.html">Other Discussion2</a>
-</div>
-<div class="container">
-<div class="sidebar">
-<ul>
-<li><a href="../neuroscience/inattentional-blindness.html">Inattentional Blindness</a></li>
-<li><a href="../neuroscience/stroop-effect.html">Stroop Effect</a></li>
-<li><a href="../neuroscience/top-down-processing.html">Top-Down Processing</a></li>
-<li><a href="../neuroscience/memory-reconsolidation.html">Memory Reconsolidation</a></li>
-</ul>
-</div>
-<div class="content">
-<h1>Top Down Processing</h1>
-<section class="section" id="Top-Down Processing">
-<h2>Top-Down Processing</h2>
-<div class="subsection">
-<h3>Definition</h3>
-<p>Content under development</p>
-</div>
-<div class="subsection">
-<h3>Discussion</h3>
-<p>Content under development</p>
-</div>
-<div class="subsection">
-<h3>User Feedback</h3>
-</div>
-</section>
-<section>
-<div id="disqus_thread"></div>
-<script>
-        var disqus_config = function () {
-          this.page.url = window.location.href;
-          this.page.identifier = "top-down-processing";
-        };
-        (function() {
-          var d = document, s = d.createElement('script');
-          s.src = 'https://persuasive-design.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-        </script>
-<script>
-  setTimeout(function() {
-    const style = document.createElement('style');
-    style.innerHTML = `
-      .reactions, 
-      .reaction-label, 
-      .reactions__container,
-      .reaction, 
-      .reaction__list {
-        display: none !important;
-      }
-    `;
-    document.head.appendChild(style);
-  }, 2000);
-</script>
 
+<body>
+  <div class="topnav">
+    <a href="/persuasivedesign/index.html">Home</a>
+    <a href="/persuasivedesign/psychology/psychconcepts.html">Psychology Concepts</a>
+    <a href="/persuasivedesign/neuroscience/neuroscience.html">Neuroscience Concepts</a>
+  </div>
+
+  <div class="container">
+    <div class="sidebar">
+      <ul>
+        <li><a href="/persuasivedesign/psychology/choice-overload.html">Choice Overload</a></li>
+        <li><a href="/persuasivedesign/psychology/chunking.html">Chunking</a></li>
+        <li><a href="/persuasivedesign/psychology/exposure-effect.html">Exposure Effect</a></li>
+        <li><a href="/persuasivedesign/psychology/ikea-effect.html">IKEA Effect</a></li>
+        <li><a href="/persuasivedesign/psychology/inertia.html">Inertia</a></li>
+        <li><a href="/persuasivedesign/psychology/non-committal-verbiage.html">Non-Committal Verbiage</a></li>
+        <li><a href="/persuasivedesign/psychology/optimism-bias.html">Optimism Bias</a></li>
+        <li><a href="/persuasivedesign/psychology/reciprocity.html">Reciprocity</a></li>
+        <li><a href="/persuasivedesign/psychology/social-proof.html">Social Proof</a></li>
+        <li><a href="/persuasivedesign/psychology/authority.html">Authority</a></li>
+      </ul>
+    </div>
+
+    <div class="content">
+<h1>Top-Down Processing</h1>
+
+<section id="Top-Down Processing">
+  <div class="subsection">
+    <h3>Definition</h3>
+    <p>Top-down processing occurs when prior knowledge, expectations, and experience shape perception of incoming information.</p>
+  </div>
+
+  <div class="subsection">
+    <h3>Psychological Impact</h3>
+    <p>Users rely on familiar patterns, mental models, and expectations when interacting with content, influencing how they interpret new information.</p>
+  </div>
+
+  <div class="subsection">
+    <h3>Design Application</h3>
+    <p>Design interfaces and content to align with familiar mental models, minimizing confusion and increasing usability.</p>
+  </div>
 </section>
-</div>
-</div>
-<script>
-  // Automatically add 'active' class to sidebar link matching current URL
-  document.addEventListener('DOMContentLoaded', function() {
-    var links = document.querySelectorAll('.sidebar a');
-    links.forEach(function(link) {
-      if (link.href === window.location.href) {
-        link.classList.add('active');
-      }
-    });
-  });
-</script>
+
+      <div id="disqus_thread"></div>
+      <script>
+      var disqus_config = function () {
+        this.page.url = window.location.href;
+        this.page.identifier = window.location.pathname;
+      };
+      (function() {
+        var d = document, s = d.createElement('script');
+        s.src = 'https://persuasive-design.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+      })();
+      </script>
+    </div>
+  </div>
 </body>
 </html>
