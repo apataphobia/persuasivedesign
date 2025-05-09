@@ -1,34 +1,10 @@
-<!DOCTYPE html>
+---
+layout: default
+Title: Inattentional Blindness
+---
 
-<html lang="en">
-<head>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Inattentional Blindness</title>
-<link href="https://apataphobia.github.io/persuasivedesign/assets/css/custom-clean.css" rel="stylesheet"/>
-</head>
-<body>
-<div class="topnav">
-<a href="/persuasivedesign/index.html">Home</a>
-<a href="/persuasivedesign/psychology/psychconcepts.html">Psychology Concepts</a>
-<a href="/persuasivedesign/neuroscience/neuroscience.html">Neuroscience Concepts</a>
-<a href="/persuasivedesign/psychology/otherdiscussion1.html">Other Discussion1</a>
-<a href="/persuasivedesign/psychology/otherdiscussion2.html">Other Discussion2</a>
-</div>
-<div class="container">
-<div class="sidebar">
-<ul>
-<li><a href="../neuroscience/inattentional-blindness.html">Inattentional Blindness</a></li>
-<li><a href="../neuroscience/stroop-effect.html">Stroop Effect</a></li>
-<li><a href="../neuroscience/top-down-processing.html">Top-Down Processing</a></li>
-<li><a href="../neuroscience/memory-reconsolidation.html">Memory Reconsolidation</a></li>
-</ul>
-</div>
-<div class="content">
 <h1>Inattentional Blindness</h1>
-<section class="section" id="Inattentional Blindness">
+<section class="section" id="Inattentional-Blindness">
 <div class="subsection">
 <h3>Definition</h3>
 <p>Inattentional blindness is the phenomenon of failing to notice an unexpected object or event that is clearly visible because one's attention is focused on something else. This is a result of our brains' tendency to filter out distracting stimuli that might cause us to lose focus and is also due to our limited attentional resources.  Unfortunately this can also cause the brain to miss important and even obvious factors that can turn out to be highly important.</p>
@@ -63,12 +39,13 @@ Inattentional blindness is magnified by excessive page content.  Restraint is ke
 <p>Thanks for reading this overview on the applications of Inattentional Blindness to our digital world.  I need your help--specifically, I really need any examples of groups that do this well, and also any that may do this poorly.  I do read these, and I'll update this page to reflect your input.  Thank you in advance!<p>
 </div>
 </section>
+
 <section>
 <div id="disqus_thread"></div>
 <script>
         var disqus_config = function () {
           this.page.url = window.location.href;
-          this.page.identifier = "inattentional-blindness";
+          this.page.identifier = "choice-overload";
         };
         (function() {
           var d = document, s = d.createElement('script');
@@ -77,35 +54,18 @@ Inattentional blindness is magnified by excessive page content.  Restraint is ke
           (d.head || d.body).appendChild(s);
         })();
         </script>
-<script>
-  setTimeout(function() {
-    const style = document.createElement('style');
-    style.innerHTML = `
-      .reactions, 
-      .reaction-label, 
-      .reactions__container,
-      .reaction, 
-      .reaction__list {
-        display: none !important;
-      }
-    `;
-    document.head.appendChild(style);
-  }, 2000);
-</script>
-
+<section>
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = window.location.href;
+      this.page.identifier = "choice-overload";
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://persuasive-design.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
 </section>
-</div>
-</div>
-<script>
-  // Automatically add 'active' class to sidebar link matching current URL
-  document.addEventListener('DOMContentLoaded', function() {
-    var links = document.querySelectorAll('.sidebar a');
-    links.forEach(function(link) {
-      if (link.href === window.location.href) {
-        link.classList.add('active');
-      }
-    });
-  });
-</script>
-</body>
-</html>

@@ -1,40 +1,11 @@
-<!DOCTYPE html>
+---
+layout: default
+title: Choice Overload
+---
 
-<html lang="en">
-<head>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Choice Overload</title>
-<link href="https://apataphobia.github.io/persuasivedesign/assets/css/custom-clean.css" rel="stylesheet"/>
-</head>
-<body>
-<div class="topnav">
-<a href="/persuasivedesign/index.html">Home</a>
-<a href="/persuasivedesign/psychology/psychconcepts.html">Psychology Concepts</a>
-<a href="/persuasivedesign/neuroscience/neuroscience.html">Neuroscience Concepts</a>
-<a href="/persuasivedesign/psychology/otherdiscussion1.html">Other Discussion1</a>
-<a href="/persuasivedesign/psychology/otherdiscussion2.html">Other Discussion2</a>
-</div>
-<div class="container">
-<div class="sidebar">
-<ul>
-<li><a href="optimism-bias.html">Optimism Bias</a></li>
-<li><a href="non-committal-verbiage.html">Non-Committal Verbiage</a></li>
-<li><a href="choice-overload.html">Choice Overload</a></li>
-<li><a href="chunking.html">Chunking</a></li>
-<li><a href="exposure-effect.html">Exposure Effect</a></li>
-<li><a href="ikea-effect.html">Ikea Effect</a></li>
-<li><a href="social-proof.html">Social Proof</a></li>
-<li><a href="authority.html">Authority</a></li>
-<li><a href="reciprocity.html">Reciprocity</a></li>
-<li><a href="inertia.html">Inertia</a></li>
-</ul>
-</div>
-<div class="content">
 <h1>Choice Overload</h1>
-<section class="section" id="Choice Overload">
+
+<section class="section" id="choice-overload">
 <div class="subsection">
 <h3>Definition</h3>
 <p>Choice overload (also known as overchoice) refers to the phenomenon where having too many options leads to anxiety, confusion, and difficulty making a decision. When the number of options becomes overwhelming, it can cause individuals to feel paralyzed or unsatisfied with their choice, even if they eventually make one.</p>
@@ -45,10 +16,12 @@
 <li>By reducing the number of choices the user needs to evaluate, the user is more likely to complete the task and to be happier with the outcome</li>
 </ul>
 </div>
+
 <div class="subsection">
 <h3>Background</h3>
 <p>As people, we like choices. In fact, we need them--or at least we need to feel like we have them. One example of the way we respond when we feel the perception of losing choices is discussed in Non-Committal Verbiage (link to tab). The problem is that--as much as we like the idea of having all the choices in the world--too many choices can cause a situation of cognitive overload. <a href="https://psycnet.apa.org/record/2000-16701-012" target="_blank">A famous study by Sheena Iyengar and Mark Lepper</a> set up two scenarios with shoppers in a grocery store setting. Participants in the first group saw a display with 24 brands of jam, others were saw a display with far fewer--only 6. Given our very human propensity for choices, the enticing variety of the display could be expected to draw more attention, and it did. 60% of the participants in that group with more jams approached to the display to consider a purchase, compared to only 40% of those in the group with fewer options. But there is a still more important factor here. The group with fewer options had a purchase rate that was a whopping 10 times higher than the first group. In short, it had fewer people consider the products, but the end result was significantly higher sales. We may want choices, but they overwhelm us. Other studies confirm this.  People are generally happier going into a setting that offers them a wide variety of choices.  But they end up far less likely to make a choice, and worst of all, they tend to be far less satisfied with their decision. When it comes to choices, the old saying is often true.  Less is more.</p>
 <div>
+
 <div class="subsection">
 <h3>Choice Overload and Digital</h3>
  <p>In digital design, the portion of users that go from the product page (the "storefront") and begin an application or other process flow is often called the consideration rate. The completion rate then is those that actually finish the flow versus compared to those that start it. The successful process is the one that maximizes the number of people that actually complete the process (and, where applicable, approved). Simplifying the experience by mitigating choice overload is a key strategy to accomplish this. Unfortunately, we're often under a lot of pressure to add any number of links to "related items" and "products/services you might also like."  You can add as much you want--you'll just kill your throughput.<p>
@@ -61,12 +34,15 @@
 <li><strong>Incorporate cognitive simplification techniques.</strong> Methods like <a href="#Chunking">Chunking</a> (breaking information into smaller groups) and filtering tools can help users process multiple options more efficiently.</li>
 <li><strong>Keep the context in mind</strong> when users are just shopping or considering your product, fewer options are better. In a context where the user may be more decisive about moving forward, they may be more tolerant to additional choices.</li>
 <p>By structuring digital flows to minimize cognitive overload, designers can create smoother, more intuitive user experiences that lead to higher engagement and completion rates.</p>
-</ul></div>
+</ul>
+</div>
+
 <div class="subsection">
 <h3>User Feedback</h3>
 <p>Thanks for reading this overview on the applications of Choice Overload to our digital world.  I need your help--specifically, I really need any examples of groups that do this well, and also any that may do this poorly.  I do read these, and I'll update this page to reflect your input.  Thank you in advance!<p>
 </div>
 </section>
+
 <section>
 <div id="disqus_thread"></div>
 <script>
@@ -81,35 +57,18 @@
           (d.head || d.body).appendChild(s);
         })();
         </script>
-<script>
-  setTimeout(function() {
-    const style = document.createElement('style');
-    style.innerHTML = `
-      .reactions, 
-      .reaction-label, 
-      .reactions__container,
-      .reaction, 
-      .reaction__list {
-        display: none !important;
-      }
-    `;
-    document.head.appendChild(style);
-  }, 2000);
-</script>
-
+<section>
+  <div id="disqus_thread"></div>
+  <script>
+    var disqus_config = function () {
+      this.page.url = window.location.href;
+      this.page.identifier = "choice-overload";
+    };
+    (function() {
+      var d = document, s = d.createElement('script');
+      s.src = 'https://persuasive-design.disqus.com/embed.js';
+      s.setAttribute('data-timestamp', +new Date());
+      (d.head || d.body).appendChild(s);
+    })();
+  </script>
 </section>
-</div>
-</div>
-<script>
-  // Automatically add 'active' class to sidebar link matching current URL
-  document.addEventListener('DOMContentLoaded', function() {
-    var links = document.querySelectorAll('.sidebar a');
-    links.forEach(function(link) {
-      if (link.href === window.location.href) {
-        link.classList.add('active');
-      }
-    });
-  });
-</script>
-</body>
-</html>

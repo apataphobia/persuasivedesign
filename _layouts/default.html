@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>{{ page.title | default: site.title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Link to custom CSS -->
+    <link rel="stylesheet" href="{{ '/assets/css/custom-clean.css' | relative_url }}">
+
+    <!-- Optional Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+  </head>
+
+  <body>
+    <!-- Top Navigation -->
+    <header>
+      {% include nav.html %}
+    </header>
+
+    <!-- Main layout container -->
+    <div class="container">
+      <!-- Sidenav -->
+      {% include sidenav.html %}
+
+      <!-- Main content area -->
+      <main class="content">
+        {{ content }}
+      </main>
+    </div>
+  </body>
+</html>
