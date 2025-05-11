@@ -1,0 +1,119 @@
+{\rtf1\ansi\ansicpg1252\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;}
+{\colortbl;\red255\green255\blue255;\red0\green0\blue0;}
+{\*\expandedcolortbl;;\csgray\c0;}
+\margl1440\margr1440\vieww29200\viewh16220\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 How to Add a New Page and Link It to Navigation\
+===============================================\
+\
+1. CREATE THE NEW PAGE\
+-----------------------\
+\'95 Create a new file (e.g., scarcity-effect.html or .md) inside your site\'92s folder.\
+\'95 Use this front matter at the top:\
+\
+  ---\
+  layout: default\
+  title: Scarcity Effect\
+  ---\
+\
+\'95 Add your content below the front matter. The layout will handle nav, styles, and Disqus automatically.\
+\
+2. ADD THE PAGE TO THE SIDE NAVIGATION\
+--------------------------------------\
+\'95 Open _includes/sidenav.html\
+\
+\'95 Find the correct section:\
+  - If it's a psychology topic: look for `\{% if page.url contains '/psychology/' %\}`\
+  - If it's a neuroscience topic: look for `\{% if page.url contains '/neuroscience/' %\}`\
+\
+\'95 Add your new link:\
+\
+  <li>\
+    <a href="\{\{ '/psychology/scarcity-effect.html' | relative_url \}\}"\
+       \{% if page.url contains 'scarcity-effect' %\}class="active"\{% endif %\}>\
+      Scarcity Effect\
+    </a>\
+  </li>\
+\
+3. (OPTIONAL) ADD TO THE TOP NAVIGATION\
+----------------------------------------\
+\'95 Open _includes/nav.html\
+\
+\'95 Add a new <li> block like this:\
+\
+  <li>\
+    <a href="\{\{ '/psychology/scarcity-effect.html' | relative_url \}\}"\
+       \{% if page.url contains 'scarcity-effect' %\}class="active"\{% endif %\}>\
+      Scarcity Effect\
+    </a>\
+  </li>\
+\
+4. TEST LOCALLY\
+---------------\
+\'95 In Terminal, navigate to your project folder and run:\
+\
+  bundle exec jekyll serve\
+\
+\'95 Visit: http://localhost:4000/persuasivedesign/\
+\'95 Confirm:\
+  - The new page renders\
+  - The link shows in the sidebar or topnav\
+  - The active link is highlighted\
+  - Disqus appears (unless disabled with `comments: false`)\
+\
+5. BACK UP THE CURRENT MASTER\
+-----------------------------\
+\'95 Save a snapshot of the current master branch before replacing it:\
+\
+  git checkout master\
+  git checkout -b backup-2005-05-11\
+  git push origin backup-2005-05-11\
+\
+\'95 This creates a versioned backup you can return to later.\
+\
+6. UPDATE THE MASTER BRANCH WITH YOUR TESTED FILES\
+--------------------------------------------------\
+\'95 Go back to your local working branch (e.g. `dev` or main working directory)\
+\'95 Add and commit your final changes:\
+\
+  git add .\
+  git commit -m "Final updates: new topic, navigation, layout changes"\
+\
+\'95 Switch to master:\
+\
+  git checkout master\
+\
+\'95 Merge or copy your local changes into master:\
+\
+  git merge dev\
+  OR\
+  manually copy the files and commit:\
+\
+git add .\
+git commit -m "Add About and centralize navigation."\
+git push origin master\
+\
+\'95 Visit your live site:\
+  https://apataphobia.github.io/persuasivedesign/\
+\
+\'95 Confirm everything displays correctly.\
+\
+7. (OPTIONAL) DISABLE DISQUS ON THIS PAGE\
+------------------------------------------\
+\'95 In the front matter of any page, add:\
+\
+  comments: false\
+\
+\'95 Disqus will no longer appear for that page.\
+\
+\
+To rename backup if needed:\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural\partightenfactor0
+
+\f1\fs22 \cf2 \CocoaLigature0 git branch -m backup-2005-05-11 backup-2025-05-11\
+git push origin --delete backup-2005-05-11\
+git push origin backup-2025-05-11
+\f0\fs24 \cf0 \CocoaLigature1 \
+}

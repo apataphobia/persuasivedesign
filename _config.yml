@@ -1,0 +1,13 @@
+title: Persuasive Design
+baseurl: "/persuasivedesign"
+markdown: kramdown
+
+disqus:
+  shortname: persuasive-design
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor
+  - _site

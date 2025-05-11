@@ -1,0 +1,105 @@
+<!-- _includes/sidenav.html -->
+<aside class="sidenav">
+  {% comment %}
+    Show Neuroscience links only on URLs under /neuroscience/
+  {% endcomment %}
+  {% if page.url contains '/neuroscience/' %}
+    <h3>Neuroscience</h3>
+    <ul>
+      <li>
+        <a href="{{ '/neuroscience/inattentional-blindness.html' | relative_url }}"
+           {% if page.url contains 'inattentional-blindness' %}class="active"{% endif %}>
+          Inattentional Blindness
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/neuroscience/stroop-effect.html' | relative_url }}"
+           {% if page.url contains 'stroop-effect' %}class="active"{% endif %}>
+          Stroop Effect
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/neuroscience/top-down-processing.html' | relative_url }}"
+           {% if page.url contains 'top-down-processing' %}class="active"{% endif %}>
+          Top‑Down Processing
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/neuroscience/memory-reconsolidation.html' | relative_url }}"
+           {% if page.url contains 'memory-reconsolidation' %}class="active"{% endif %}>
+          Memory Reconsolidation
+        </a>
+      </li>
+    </ul>
+  {% endif %}
+
+  {% comment %}
+    Show Psychology links only on URLs under /psychology/
+  {% endcomment %}
+  {% if page.url contains '/psychology/' %}
+    <h3>Psychology</h3>
+    <ul>
+      <li>
+        <a href="{{ '/psychology/optimism-bias.html' | relative_url }}"
+           {% if page.url contains 'optimism-bias' %}class="active"{% endif %}>
+          Optimism Bias
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/psychology/non-committal-verbiage.html' | relative_url }}"
+           {% if page.url contains 'non-committal-verbiage' %}class="active"{% endif %}>
+          Non‑Committal Verbiage
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/psychology/choice-overload.html' | relative_url }}"
+           {% if page.url contains 'choice-overload' %}class="active"{% endif %}>
+          Choice Overload
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/psychology/chunking.html' | relative_url }}"
+           {% if page.url contains 'chunking' %}class="active"{% endif %}>
+          Chunking
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/psychology/exposure-effect.html' | relative_url }}"
+           {% if page.url contains 'exposure-effect' %}class="active"{% endif %}>
+          Exposure Effect
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/psychology/ikea-effect.html' | relative_url }}"
+           {% if page.url contains 'ikea-effect' %}class="active"{% endif %}>
+          Ikea Effect
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/psychology/social-proof.html' | relative_url }}"
+           {% if page.url contains 'social-proof' %}class="active"{% endif %}>
+          Social Proof
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/psychology/authority.html' | relative_url }}"
+           {% if page.url contains 'authority' %}class="active"{% endif %}>
+          Authority
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/psychology/reciprocity.html' | relative_url }}"
+           {% if page.url contains 'reciprocity' %}class="active"{% endif %}>
+          Reciprocity
+        </a>
+      </li>
+      <li>
+        <a href="{{ '/psychology/inertia.html' | relative_url }}"
+           {% if page.url contains 'inertia' %}class="active"{% endif %}>
+          Inertia
+        </a>
+      </li>
+    </ul>
+  {% endif %}
+</aside>
+
