@@ -1,8 +1,38 @@
----
-layout: default
-Title: Reciprocity
----
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Reciprocity</title>
+<link href="https://apataphobia.github.io/persuasivedesign/assets/css/custom-clean.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="topnav">
+<a href="/persuasivedesign/index.html">Home</a>
+<a href="/persuasivedesign/psychology/psychconcepts.html">Psychology Concepts</a>
+<a href="/persuasivedesign/neuroscience/neuroscience.html">Neuroscience Concepts</a>
+<a href="/persuasivedesign/psychology/otherdiscussion1.html">Other Discussion1</a>
+<a href="/persuasivedesign/psychology/otherdiscussion2.html">Other Discussion2</a>
+</div>
+<div class="container">
+<div class="sidebar">
+<ul>
+<li><a href="optimism-bias.html">Optimism Bias</a></li>
+<li><a href="non-committal-verbiage.html">Non-Committal Verbiage</a></li>
+<li><a href="choice-overload.html">Choice Overload</a></li>
+<li><a href="chunking.html">Chunking</a></li>
+<li><a href="exposure-effect.html">Exposure Effect</a></li>
+<li><a href="ikea-effect.html">Ikea Effect</a></li>
+<li><a href="social-proof.html">Social Proof</a></li>
+<li><a href="authority.html">Authority</a></li>
+<li><a href="reciprocity.html">Reciprocity</a></li>
+<li><a href="inertia.html">Inertia</a></li>
+</ul>
+</div>
+<div class="content">
 <h1>Reciprocity</h1>
 <section class="section" id="Reciprocity">
 <div class="subsection">
@@ -16,11 +46,11 @@ Title: Reciprocity
 </ul>
 </div>
 <div class="subsection">
-<h3>Background</h3>
+<h3>Discussion</h3>
 <p> Reciprocity is a fundamental element of human interaction. Whether it’s a free trial, helpful content, or personalized advice, giving something to users upfront can activate their innate desire to respond in kind. In digital design, this can mean providing mortgage calculators, credit card comparison tools, or insurance coverage checklists before asking users to begin an application. These elements not only improve the user experience but also increase the likelihood that a user will complete a transaction.</p>
 <p>For example, on a bank website offering auto loans, displaying a rate estimator tool or a loan pre-qualification check before requesting personal details can significantly improve user flow. Similarly, credit card product pages that offer personalized card match results based on spending habits create a sense of value and personalization—making the user more likely to continue with the application process.</p>
 <p>Digital design can leverage reciprocation to support trust and reduce drop-offs. Users perceive the experience as beneficial rather than transactional, and that subtle shift builds stronger long-term engagement.</p>
-<h3>Reciprocity and Digital</h3>
+<p>Digital Applications:</p>
 <ul>
 <li><strong>Offer value upfront.</strong> Provide useful tools or insights (like calculators, guides, or estimates) before asking for commitment or personal data.</li>
 <li><strong>Use smart defaults and personalization.</strong> Make users feel known and supported by offering recommendations based on their behavior or inputs.</li>
@@ -28,11 +58,50 @@ Title: Reciprocity
 <li><strong>Test early gifts versus late requests.</strong> A/B test different flows where users receive value at different stages to measure which creates stronger engagement and conversions.</li>
 <p>By leveraging reciprocation in web design, financial institutions can guide users through applications and product selections more effectively, while building loyalty and trust throughout the experience.</p>
 </ul>
-</div> 
-<div class="subsection">
-<h3>User Feedback</h3>
-<p>Thanks for reading this overview on the applications of Social Proof to our digital world.  I need your help--specifically, I really need any examples of groups that do this well, and also any that may do this poorly.  I do read these, and I'll update this page to reflect your input.  Thank you in advance!<p>
-</div>
-</section>
+</div> </section>
 <section>
+<div id="disqus_thread"></div>
+<script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = "reciprocity";
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://persuasive-design.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+        </script>
+<script>
+  setTimeout(function() {
+    const style = document.createElement('style');
+    style.innerHTML = `
+      .reactions, 
+      .reaction-label, 
+      .reactions__container,
+      .reaction, 
+      .reaction__list {
+        display: none !important;
+      }
+    `;
+    document.head.appendChild(style);
+  }, 2000);
+</script>
+
 </section>
+</div>
+</div>
+<script>
+  // Automatically add 'active' class to sidebar link matching current URL
+  document.addEventListener('DOMContentLoaded', function() {
+    var links = document.querySelectorAll('.sidebar a');
+    links.forEach(function(link) {
+      if (link.href === window.location.href) {
+        link.classList.add('active');
+      }
+    });
+  });
+</script>
+</body>
+</html>

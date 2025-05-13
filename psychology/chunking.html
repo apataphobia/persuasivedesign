@@ -1,38 +1,7 @@
-<!DOCTYPE html>
+---
+layout: default
+---
 
-<html lang="en">
-<head>
-<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
-<meta charset="utf-8"/>
-<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
-<title>Chunking</title>
-<link href="https://apataphobia.github.io/persuasivedesign/assets/css/custom-clean.css" rel="stylesheet"/>
-</head>
-<body>
-<div class="topnav">
-<a href="/persuasivedesign/index.html">Home</a>
-<a href="/persuasivedesign/psychology/psychconcepts.html">Psychology Concepts</a>
-<a href="/persuasivedesign/neuroscience/neuroscience.html">Neuroscience Concepts</a>
-<a href="/persuasivedesign/psychology/otherdiscussion1.html">Other Discussion1</a>
-<a href="/persuasivedesign/psychology/otherdiscussion2.html">Other Discussion2</a>
-</div>
-<div class="container">
-<div class="sidebar">
-<ul>
-<li><a href="optimism-bias.html">Optimism Bias</a></li>
-<li><a href="non-committal-verbiage.html">Non-Committal Verbiage</a></li>
-<li><a href="choice-overload.html">Choice Overload</a></li>
-<li><a href="chunking.html">Chunking</a></li>
-<li><a href="exposure-effect.html">Exposure Effect</a></li>
-<li><a href="ikea-effect.html">Ikea Effect</a></li>
-<li><a href="social-proof.html">Social Proof</a></li>
-<li><a href="authority.html">Authority</a></li>
-<li><a href="reciprocity.html">Reciprocity</a></li>
-<li><a href="inertia.html">Inertia</a></li>
-</ul>
-</div>
-<div class="content">
 <h1>Chunking</h1>
 <section class="section" id="Chunking">
 <div class="subsection">
@@ -46,9 +15,10 @@ Key Characteristics:
 </ul>
 </div>
 <div class="subsection">
-<h3>Discussion</h3>
+<h3>Background</h3>
 <p>Note: streamline this content significantly<p>
 <p>In digital design, we often follow a simple mantra: that simple is, in fact, better. And the data supports this idea. <a href="https://psychclassics.yorku.ca/Miller/" target="_blank">A foundational study by George Miller</a>, who was interested in the effect of cognitive load on memory and processing ability, concluded that we can actually deal fairly well with 5-9 items before cognitive overload impairs our ability to process, although subsequent studies have indicated that this may be closer to 3-5. Some studies go even lower-- <a href="https://pubmed.ncbi.nlm.nih.gov/11515286/" target="_blank">Nelson Cowan</a> puts the number at 4, while <a href="https://pubmed.ncbi.nlm.nih.gov/15724362/" target="_blank">Fernand Gobet and Gary Clarkson</a>,on the more pessimistic side, suggest it may only 2.</p>
+<h3>Chunking and Digital</h3>
 <p>Regardless of the actual number, chunking, when done well can be an extremely effective method of reducing cognitive load. I had a case study a while ago managing a digital flow for auto loans and was heading up a new program we called the Auto Event, which had the goal of integrating our loan, insurance and car-buying components.  I had a goal that was extremely controversial--I wanted to test a combined product page that integrated the three products together.  We settled on a design with tabs that switched the content between the products depending on which tab was selected.  There was still a lot of concern even as we started the AB testing.  But the results of test were clear and compelling to a degree that surprised even me--and I was the design's most passionate champion. When the numbers were crunched, the cost-benefit analysis was in the millions.  And since we did this all with WCM content changes, the cost was only the time we put into it.  Chunking had clearly been a successful approach. A future iteration added very focused advice sections for car buying, loans, and insurance topics, and showed similar success.</p>
 </p>It's important to note that the effort was successful because it was limited in scope to products that were highly conceptually related.  Significantly more topics, especially unrelated in nature, will have the opposite effect.  For more on that scenario, see the topic on Choice Overload (link to page)</p>
 <p>Digital Applications:</p>
@@ -59,54 +29,12 @@ Key Characteristics:
 </ul>
 <p>The key takeaway here is that through chunking, we were able to increase the key messages on the page--which studies show arouses interest on the part of the user--while at the same time decreasing the cognitive load on the user, making for a more pleasant user experience. The end result is a win for everyone.
                     <p>
-</p></p></div>
+</div>
 <div class="subsection">
 <h3>User Feedback</h3>
+<p>Thanks for reading this overview on the applications of Chunking to our digital world.  I need your help--specifically, I really need any examples of groups that do this well, and also any that may do this poorly.  I do read these, and I'll update this page to reflect your input.  Thank you in advance!<p>
 </div>
 </section>
 <section>
-<div id="disqus_thread"></div>
-<script>
-        var disqus_config = function () {
-          this.page.url = window.location.href;
-          this.page.identifier = "chunking";
-        };
-        (function() {
-          var d = document, s = d.createElement('script');
-          s.src = 'https://persuasive-design.disqus.com/embed.js';
-          s.setAttribute('data-timestamp', +new Date());
-          (d.head || d.body).appendChild(s);
-        })();
-        </script>
-<script>
-  setTimeout(function() {
-    const style = document.createElement('style');
-    style.innerHTML = `
-      .reactions, 
-      .reaction-label, 
-      .reactions__container,
-      .reaction, 
-      .reaction__list {
-        display: none !important;
-      }
-    `;
-    document.head.appendChild(style);
-  }, 2000);
-</script>
-
+<section>
 </section>
-</div>
-</div>
-<script>
-  // Automatically add 'active' class to sidebar link matching current URL
-  document.addEventListener('DOMContentLoaded', function() {
-    var links = document.querySelectorAll('.sidebar a');
-    links.forEach(function(link) {
-      if (link.href === window.location.href) {
-        link.classList.add('active');
-      }
-    });
-  });
-</script>
-</body>
-</html>

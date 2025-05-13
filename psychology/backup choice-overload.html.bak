@@ -1,7 +1,38 @@
----
-layout: default
----
+<!DOCTYPE html>
 
+<html lang="en">
+<head>
+<link href="https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500&family=Source+Sans+Pro&display=swap" rel="stylesheet">
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Choice Overload</title>
+<link href="https://apataphobia.github.io/persuasivedesign/assets/css/custom-clean.css" rel="stylesheet"/>
+</head>
+<body>
+<div class="topnav">
+<a href="/persuasivedesign/index.html">Home</a>
+<a href="/persuasivedesign/psychology/psychconcepts.html">Psychology Concepts</a>
+<a href="/persuasivedesign/neuroscience/neuroscience.html">Neuroscience Concepts</a>
+<a href="/persuasivedesign/psychology/otherdiscussion1.html">Other Discussion1</a>
+<a href="/persuasivedesign/psychology/otherdiscussion2.html">Other Discussion2</a>
+</div>
+<div class="container">
+<div class="sidebar">
+<ul>
+<li><a href="optimism-bias.html">Optimism Bias</a></li>
+<li><a href="non-committal-verbiage.html">Non-Committal Verbiage</a></li>
+<li><a href="choice-overload.html">Choice Overload</a></li>
+<li><a href="chunking.html">Chunking</a></li>
+<li><a href="exposure-effect.html">Exposure Effect</a></li>
+<li><a href="ikea-effect.html">Ikea Effect</a></li>
+<li><a href="social-proof.html">Social Proof</a></li>
+<li><a href="authority.html">Authority</a></li>
+<li><a href="reciprocity.html">Reciprocity</a></li>
+<li><a href="inertia.html">Inertia</a></li>
+</ul>
+</div>
+<div class="content">
 <h1>Choice Overload</h1>
 <section class="section" id="Choice Overload">
 <div class="subsection">
@@ -33,6 +64,19 @@ layout: default
 </div>
 </section>
 <section>
+<div id="disqus_thread"></div>
+<script>
+        var disqus_config = function () {
+          this.page.url = window.location.href;
+          this.page.identifier = "choice-overload";
+        };
+        (function() {
+          var d = document, s = d.createElement('script');
+          s.src = 'https://persuasive-design.disqus.com/embed.js';
+          s.setAttribute('data-timestamp', +new Date());
+          (d.head || d.body).appendChild(s);
+        })();
+        </script>
 <script>
   setTimeout(function() {
     const style = document.createElement('style');
